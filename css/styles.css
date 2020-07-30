@@ -642,8 +642,8 @@ input[type='checkbox'] {
 /*     03. Navigation     */
 /**************************/
 .navbar-custom {
-	padding-top: 0.375rem;
-	padding-bottom: 0.375rem;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
 	background-color: #113448;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
@@ -655,9 +655,10 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 3rem;
-	height: 3rem;
-	-webkit-backface-visibility: hidden;
+    width: auto;
+	height: 4rem;
+	display:block;
+	backface-visibility: hidden;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -852,12 +853,14 @@ input[type='checkbox'] {
 .cards-1 {
 	padding-top: 3rem;
 	padding-bottom: 2.875rem;
+	background-color: #fbfbfb;
 }
 
 .cards-1 .card {
 	margin-bottom: 2.5rem;
 	border: none;
 	text-align: center;
+	background-color: #fbfbfb;
 }
 
 .cards-1 .fa-stack {
@@ -1778,8 +1781,8 @@ a:hover.back-to-top {
 /*     20. Extra Pages     */
 /***************************/
 .ex-header {
-	padding-top: 8rem;
-	padding-bottom: 5rem;
+	padding-top: 6rem;
+	padding-bottom: 3rem;
 	background-color: #153e52;
 	text-align: center;
 }
@@ -1993,8 +1996,7 @@ a:hover.back-to-top {
 		text-align: left;
 	}
 
-	.counter #counter .cell {
-	}
+
 	/* end of about */
 
 
@@ -2012,8 +2014,8 @@ a:hover.back-to-top {
 
 	/* Extra Pages */
 	.ex-header {
-		padding-top: 11rem;
-		padding-bottom: 9rem;
+		padding-top: 7rem;
+		padding-bottom: 6rem;
 	}
 
 	.ex-basic-2 .form-container {
