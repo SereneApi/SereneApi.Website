@@ -1,3 +1,6 @@
+ErrorDocument 404 http://www.sereneapi.org/errors/404
+ErrorDocument 500 http://www.sereneapi.org/errors/500
+
 RewriteEngine On
 
 RewriteCond %{HTTP_HOST} ^(sereneapi\.org)$ [NC]
@@ -6,7 +9,6 @@ RewriteRule ^ http://www.%1%{REQUEST_URI} [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-
-
-
-
+<filesMatch ".(ico|svg|jpg|jpeg|png|js|css|webp)$">
+    Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
