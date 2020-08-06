@@ -10880,23 +10880,29 @@ input[type='checkbox'] {
 /*     06. Description     */
 /***************************/
 .features {
-	padding-top: 7rem;
+	padding-top: 3rem;
 	padding-bottom: 2.875rem;
 	background-color: #fbfbfb;
 }
 
 .features .card {
 	margin-bottom: 2.5rem;
-	border: none;
 	text-align: center;
-	background-color: #fbfbfb;
+	background-color: #fff;
+	border-radius: 2rem;
+	padding: 1rem;
+	min-height: 15rem;
+	box-shadow: 10px 5px 20px 0px rgb(17 52 72 / 0.30);
+}
+
+.features .card-body {
+	padding: 0;
 }
 
 .features .fa-stack {
 	width: 6rem;
 	height: 6rem;
 	margin-right: auto;
-	margin-bottom: 1rem;
 	margin-left: auto;
 	line-height: 6rem;
 	text-align: left;
@@ -10913,10 +10919,6 @@ input[type='checkbox'] {
 .features .fa-stack-1x {
 	color: #fff;
 	font-size: 2.75rem;
-}
-
-.features .card-body {
-	padding: 0;
 }
 
 .features .card-title {
@@ -11000,20 +11002,6 @@ a:hover.back-to-top {
 	size: 100%
 }
 
-@media (min-width: 720px){
-	.header{
-		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header-background-720p.webp') center center no-repeat;
-		background-size: cover;
-		size: 100%
-	}
-
-	.error-header{
-		background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url('../images/header-background-720p.webp') center center no-repeat;
-		background-size: cover;
-		size: 100%
-	}
-}
-
 /*****************************/
 /*     Sidebar               */
 /*****************************/	
@@ -11036,7 +11024,18 @@ a:hover.back-to-top {
 /*****************************/	
 /* Min-width width 768px */
 @media (min-width: 768px) {
-	
+	.header{
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header-background-720p.webp') center center no-repeat;
+		background-size: cover;
+		size: 100%
+	}
+
+	.error-header{
+		background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url('../images/header-background-720p.webp') center center no-repeat;
+		background-size: cover;
+		size: 100%
+	}
+
 	.navbar-page-landing .fa-stack .hexagon,
 	.navbar-page .fa-stack .hexagon {
 		width: 2.5rem;
@@ -11195,8 +11194,8 @@ a:hover.back-to-top {
 	.features .card {
 		display: inline-block;
 		max-width: 17.5rem;
-		text-align: left;
 		vertical-align: top;
+		height: 60vh;
 	}
 	
 	.features div.card:nth-child(3n+2) {
@@ -11240,7 +11239,9 @@ a:hover.back-to-top {
 
 	/* Description */
 	.features .card {
+		border-radius: 4rem;
 		max-width: 21rem;
+		height: 55vh;
 	}
 
 	.features div.card:nth-child(3n+2) {
